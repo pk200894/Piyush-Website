@@ -1,0 +1,301 @@
+/* ===============================
+   THEME VARIABLES
+================================ */
+:root {
+  --bg: linear-gradient(135deg, #eef2ff, #f8fafc);
+  --card-bg: #ffffff;
+  --text: #1f2937;
+  --heading: #0f172a;
+  --accent: #6366f1;
+  --shadow: rgba(0,0,0,0.08);
+}
+
+body.dark {
+  --bg: linear-gradient(135deg, #0f172a, #020617);
+  --card-bg: #020617;
+  --text: #e5e7eb;
+  --heading: #f8fafc;
+  --accent: #38bdf8;
+  --shadow: rgba(0,0,0,0.6);
+}
+
+/* ===============================
+   BASE
+================================ */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.6;
+  transition: background 0.4s ease, color 0.4s ease;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.container {
+  max-width: 1100px;
+  margin: auto;
+  padding: 40px 20px;
+}
+
+/* ===============================
+   NAVBAR
+================================ */
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: var(--card-bg);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 28px;
+  box-shadow: 0 10px 30px var(--shadow);
+}
+
+.nav-brand {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--heading);
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 24px;
+  align-items: center;
+}
+
+.nav-links a {
+  font-weight: 600;
+  position: relative;
+  padding-bottom: 4px;
+}
+
+.nav-links a.active::after,
+.nav-links a:hover::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+  background: var(--accent);
+}
+
+/* ===============================
+   DROPDOWN (ANIMATED)
+================================ */
+.dropdown {
+  position: relative;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 120%;
+  left: 0;
+  background: var(--card-bg);
+  min-width: 220px;
+  list-style: none;
+  border-radius: 14px;
+  box-shadow: 0 15px 40px var(--shadow);
+  opacity: 0;
+  transform: translateY(12px);
+  pointer-events: none;
+  transition: all 0.3s ease;
+}
+
+.dropdown:hover .dropdown-menu {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+
+.dropdown-menu li {
+  padding: 12px 20px;
+}
+
+.dropdown-menu li:hover {
+  background: rgba(99,102,241,0.12);
+}
+
+/* ===============================
+   HAMBURGER MENU
+================================ */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+}
+
+.hamburger span {
+  width: 25px;
+  height: 3px;
+  background: var(--text);
+}
+
+/* ===============================
+   DARK MODE BUTTON
+================================ */
+.dark-toggle {
+  padding: 6px 12px;
+  border-radius: 20px;
+  border: none;
+  cursor: pointer;
+  background: var(--accent);
+  color: #fff;
+  transition: transform 0.2s ease;
+}
+
+.dark-toggle:hover {
+  transform: scale(1.05);
+}
+
+/* ===============================
+   HERO / HEADER (INDEX PAGE)
+================================ */
+header {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  background: var(--card-bg);
+  padding: 30px;
+  border-radius: 18px;
+  box-shadow: 0 20px 40px var(--shadow);
+}
+
+header img {
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 10px 25px var(--shadow);
+}
+
+.intro h1 {
+  font-size: 2.2rem;
+  background: linear-gradient(90deg, #2563eb, #9333ea);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.intro h2 {
+  margin-top: 6px;
+  font-size: 1.1rem;
+  color: var(--text);
+}
+
+/* ===============================
+   CONTENT SECTIONS
+================================ */
+section {
+  margin-top: 60px;
+}
+
+h3 {
+  margin-bottom: 20px;
+  border-left: 6px solid var(--accent);
+  padding-left: 12px;
+  color: var(--heading);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  background: var(--card-bg);
+  padding: 24px;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px var(--shadow);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 18px 45px var(--shadow);
+}
+
+/* ===============================
+   CTA BUTTONS
+================================ */
+.cta-buttons {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.cta-btn {
+  padding: 14px 28px;
+  border-radius: 999px;
+  background: linear-gradient(90deg, #2563eb, #9333ea);
+  color: #fff;
+  font-weight: 600;
+  box-shadow: 0 10px 25px rgba(37,99,235,0.35);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.cta-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 18px 40px rgba(147,51,234,0.4);
+}
+
+/* ===============================
+   FOOTER
+================================ */
+footer {
+  margin-top: 80px;
+  text-align: center;
+  padding: 30px;
+  background: var(--card-bg);
+  box-shadow: 0 10px 30px var(--shadow);
+  border-radius: 16px;
+}
+
+/* ===============================
+   MOBILE RESPONSIVE
+================================ */
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+    position: absolute;
+    top: 70px;
+    right: 20px;
+    flex-direction: column;
+    background: var(--card-bg);
+    padding: 20px;
+    border-radius: 16px;
+    box-shadow: 0 20px 40px var(--shadow);
+  }
+
+  .nav-links.show {
+    display: flex;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+
+  header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  header img {
+    width: 180px;
+    height: 180px;
+  }
+}
