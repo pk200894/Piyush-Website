@@ -85,8 +85,19 @@
     }
 
     .card:hover {
-      transform: translateY(-6px);
+      transform: translateY(-6px) scale(1.02);
       box-shadow: 0 25px 50px var(--shadow);
+    }
+
+    @media (max-width: 768px) {
+      header {
+        flex-direction: column;
+        text-align: center;
+      }
+      header img {
+        width: 180px;
+        height: 180px;
+      }
     }
 
     ul { padding-left: 18px; }
@@ -127,13 +138,13 @@
     }
   </style>
 </head>
-<body>
+<body class="dark">
 
   <div class="container">
 
     <!-- HEADER -->
     <header>
-      <button class="dark-toggle" onclick="toggleDarkMode()">Dark Mode</button>
+      <button class="dark-toggle" onclick="toggleDarkMode()">🌙</button>
       <img src="profile.jpg" alt="Profile Photo" />
 
 
@@ -147,6 +158,7 @@
         </p>
         <p>
           <a href="https://www.linkedin.com/in/piyush-kumar20" target="_blank">LinkedIn</a> ·
+          <a href="https://github.com/your-github-username" target="_blank">GitHub</a> ·
           <a href="mailto:pk200894@gmail.com">Email</a>
         </p>
         <p style="margin-top:16px;">
@@ -196,6 +208,17 @@
           <li>Analyzed automation failures, logged defects in <strong>JIRA/Bugzilla</strong>, and revalidated fixes</li>
           <li>Worked with reusable methods and basic framework concepts to improve script maintainability</li>
         </ul>
+      </div>
+    </section>
+
+    <!-- TESTING EXPOSURE -->
+    <section>
+      <h3>API Testing Exposure</h3>
+      <div class="grid">
+        <div class="card">Basic API Testing using Postman</div>
+        <div class="card">Validating Request & Response Payloads</div>
+        <div class="card">Status Code & Response Time Validation</div>
+        <div class="card">REST API Concepts (GET, POST, PUT, DELETE)</div>
       </div>
     </section>
 
@@ -284,6 +307,18 @@
 <script>
   function toggleDarkMode() {
     document.body.classList.toggle('dark');
+    localStorage.setItem('theme', document.body.classList.contains('dark') ? 'dark' : 'light');
+  }
+
+  // Set default theme to dark
+  if (!localStorage.getItem('theme')) {
+    localStorage.setItem('theme', 'dark');
+  }
+
+  if (localStorage.getItem('theme') === 'dark') {
+    document.body.classList.add('dark');
+  } else {
+    document.body.classList.remove('dark');
   }
 </script>
 </body>
