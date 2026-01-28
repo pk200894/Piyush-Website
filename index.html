@@ -3,30 +3,128 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Piyush Kumar | Automation Tester</title>
+    <title>Piyush Kumar | Software Test Engineer | Automation Tester</title>
+  <meta name="description" content="Piyush Kumar – Software Test Engineer with ~2 years of experience in Automation Testing, Selenium WebDriver (Java), Manual Testing, Agile, and QA practices." />
+  <meta name="keywords" content="Software Test Engineer, Automation Tester, Selenium WebDriver, Java, Manual Testing, QA Engineer, SDET, Pune" />
+  <meta name="author" content="Piyush Kumar" />
+  <meta property="og:title" content="Piyush Kumar | Automation Tester" />
+  <meta property="og:description" content="Professional portfolio of Piyush Kumar – Automation Tester with Selenium WebDriver (Java) and QA experience." />
+  <meta property="og:type" content="website" />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
   <style>
+    :root {
+      --bg: linear-gradient(135deg, #eef2ff, #f8fafc);
+      --card-bg: linear-gradient(135deg, #ffffff, #f8fafc);
+      --text: #222;
+      --heading: #1e293b;
+      --accent: #6366f1;
+      --shadow: rgba(0,0,0,0.08);
+    }
+
+    body.dark {
+      --bg: linear-gradient(135deg, #0f172a, #020617);
+      --card-bg: #020617;
+      --text: #e5e7eb;
+      --heading: #f8fafc;
+      --accent: #38bdf8;
+      --shadow: rgba(0,0,0,0.6);
+    }
+
     * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Inter', sans-serif; }
-    body { background: #f4f6f8; color: #222; line-height: 1.6; }
+    body { background: var(--bg); color: var(--text); line-height: 1.6; transition: all 0.4s ease; }
     .container { max-width: 1100px; margin: auto; padding: 40px 20px; }
-    header { display: flex; flex-wrap: wrap; align-items: center; gap: 30px; }
+
+    header {
+      background: var(--card-bg);
+      padding: 30px;
+      border-radius: 18px;
+      box-shadow: 0 20px 40px var(--shadow);
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 30px;
+      position: relative;
+    }
+
     header img {
-  width: 220px;
-  height: 220px;
-  object-fit: cover;
-  border-radius: 50%;
-  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
-}
-    .intro h1 { font-size: 2.4rem; }
-    .intro h2 { font-size: 1.2rem; font-weight: 400; color: #555; margin: 8px 0; }
+      width: 220px;
+      height: 220px;
+      object-fit: cover;
+      border-radius: 50%;
+      box-shadow: 0 10px 25px var(--shadow);
+    }
+
+    .intro h1 {
+      font-size: 2.6rem;
+      background: linear-gradient(90deg, #2563eb, #9333ea);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .intro h2 { font-size: 1.2rem; font-weight: 500; color: var(--heading); margin: 8px 0; }
     .intro p { margin-top: 12px; max-width: 600px; }
+
     section { margin-top: 60px; }
-    h3 { font-size: 1.6rem; margin-bottom: 20px; border-left: 5px solid #2563eb; padding-left: 10px; }
+    h3 {
+      font-size: 1.6rem;
+      margin-bottom: 20px;
+      border-left: 6px solid var(--accent);
+      padding-left: 12px;
+      color: var(--heading);
+    }
+
     .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; }
-    .card { background: #fff; padding: 20px; border-radius: 12px; box-shadow: 0 5px 15px rgba(0,0,0,0.08); }
+
+    .card {
+      background: var(--card-bg);
+      padding: 24px;
+      border-radius: 18px;
+      border-top: 4px solid var(--accent);
+      box-shadow: 0 10px 30px var(--shadow);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 25px 50px var(--shadow);
+    }
+
     ul { padding-left: 18px; }
-    footer { text-align: center; margin-top: 80px; color: #666; }
-    a { color: #2563eb; text-decoration: none; font-weight: 600; }
+
+    footer {
+      text-align: center;
+      margin-top: 80px;
+      padding: 35px 20px;
+      border-radius: 18px;
+      background: var(--card-bg);
+      box-shadow: 0 10px 30px var(--shadow);
+      color: var(--text);
+    }
+
+    a { color: var(--accent); text-decoration: none; font-weight: 600; }
+
+    .resume-btn {
+      display: inline-block;
+      padding: 12px 22px;
+      border-radius: 30px;
+      background: linear-gradient(90deg, #2563eb, #9333ea);
+      color: #ffffff;
+      font-weight: 600;
+      box-shadow: 0 10px 25px rgba(37,99,235,0.35);
+    }
+
+    .dark-toggle {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      padding: 8px 14px;
+      border-radius: 20px;
+      cursor: pointer;
+      background: var(--accent);
+      color: #fff;
+      font-size: 0.85rem;
+      border: none;
+    }
   </style>
 </head>
 <body>
@@ -35,6 +133,7 @@
 
     <!-- HEADER -->
     <header>
+      <button class="dark-toggle" onclick="toggleDarkMode()">Dark Mode</button>
       <img src="profile.jpg" alt="Profile Photo" />
 
 
@@ -49,6 +148,9 @@
         <p>
           <a href="https://www.linkedin.com/in/piyush-kumar20" target="_blank">LinkedIn</a> ·
           <a href="mailto:pk200894@gmail.com">Email</a>
+        </p>
+        <p style="margin-top:16px;">
+          <a href="resume.pdf" class="resume-btn" download>Download Resume</a>
         </p>
       </div>
     </header>
@@ -73,11 +175,42 @@
         <h4>Junior Software Tester – SPPU Edutech Foundation</h4>
         <p><em>March 2024 – Present</em></p>
         <ul>
-          <li>Designed and executed manual and automated test cases for web and mobile applications</li>
-          <li>Automated regression scenarios using Selenium WebDriver with Java</li>
-          <li>Logged and tracked defects using JIRA and Bugzilla</li>
-          <li>Collaborated with developers in Agile sprint cycles</li>
+          <li>Worked on end-to-end testing activities including requirement analysis, test case design, execution, and defect tracking</li>
+          <li>Performed functional, regression, integration, and sanity testing for web and mobile applications</li>
+          <li>Actively collaborated with developers and product teams in Agile sprint cycles</li>
+          <li>Supported UAT cycles and performed production sanity testing before releases</li>
         </ul>
+      </div>
+    </section>
+
+    <!-- AUTOMATION EXPERIENCE -->
+    <section>
+      <h3>Automation Experience</h3>
+      <div class="card">
+        <ul>
+          <li>Developed and executed automated test scripts using <strong>Selenium WebDriver with Java</strong> for critical application workflows</li>
+          <li>Automated regression test cases to reduce manual testing effort during sprint releases</li>
+          <li>Used <strong>TestNG</strong> for test execution, grouping, and reporting</li>
+          <li>Managed project dependencies and builds using <strong>Maven</strong></li>
+          <li>Maintained and enhanced automation scripts based on application changes</li>
+          <li>Analyzed automation failures, logged defects in <strong>JIRA/Bugzilla</strong>, and revalidated fixes</li>
+          <li>Worked with reusable methods and basic framework concepts to improve script maintainability</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- TESTING EXPOSURE -->
+    <section>
+      <h3>Testing Exposure</h3>
+      <div class="grid">
+        <div class="card">Functional Testing</div>
+        <div class="card">Regression Testing</div>
+        <div class="card">Smoke & Sanity Testing</div>
+        <div class="card">Integration Testing</div>
+        <div class="card">User Acceptance Testing (UAT)</div>
+        <div class="card">Web & Mobile Application Testing</div>
+        <div class="card">Cross-Browser Testing</div>
+        <div class="card">Production Sanity Testing</div>
       </div>
     </section>
 
@@ -95,10 +228,49 @@
     <section>
       <h3>Projects</h3>
       <div class="grid">
-        <div class="card">MSFDA Portal</div>
-        <div class="card">Recruitment & Internship Portal</div>
-        <div class="card">Fee Collection & Remuneration System</div>
-        <div class="card">Complaint Management System</div>
+        <div class="card">
+          <h4>MSFDA Portal</h4>
+          <p><em>Government Web Application</em></p>
+          <ul>
+            <li>Tested a government portal designed for faculty development and training management</li>
+            <li>Performed functional, regression, and integration testing across multiple modules</li>
+            <li>Validated form submissions, user roles, and data integrity</li>
+            <li>Logged and tracked defects using JIRA/Bugzilla and verified fixes</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <h4>Recruitment & Internship Portal (SPPU)</h4>
+          <p><em>Web-Based Recruitment System</em></p>
+          <ul>
+            <li>Worked on end-to-end testing of recruitment and internship workflows</li>
+            <li>Tested candidate registration, application submission, and admin approval flows</li>
+            <li>Performed regression testing during feature enhancements</li>
+            <li>Automated critical regression scenarios using Selenium WebDriver (Java)</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <h4>Fee Collection & Remuneration System</h4>
+          <p><em>Financial Management Application</em></p>
+          <ul>
+            <li>Tested fee collection, payment processing, and remuneration calculation modules</li>
+            <li>Validated data accuracy, transaction flows, and report generation</li>
+            <li>Performed integration testing with dependent modules</li>
+            <li>Ensured defect-free releases through regression and sanity testing</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <h4>Complaint Management System</h4>
+          <p><em>Web Application</em></p>
+          <ul>
+            <li>Tested complaint registration, tracking, and resolution workflows</li>
+            <li>Validated role-based access for users and administrators</li>
+            <li>Performed functional and regression testing during sprint cycles</li>
+            <li>Collaborated with developers to verify bug fixes and improvements</li>
+          </ul>
+        </div>
       </div>
     </section>
 
@@ -109,5 +281,10 @@
 
   </div>
 
+<script>
+  function toggleDarkMode() {
+    document.body.classList.toggle('dark');
+  }
+</script>
 </body>
 </html>
