@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact | Piyush Kumar</title>
+  <meta name="description" content="Contact Piyush Kumar – Software Test Engineer (Manual & Automation)." />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body class="dark">
+
+<!-- NAVBAR -->
+<nav class="navbar">
+  <div class="nav-brand">Piyush Kumar</div>
+  <div class="hamburger" onclick="toggleMenu()">
+    <span></span><span></span><span></span>
+  </div>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="index.html">Overview</a></li>
+    <li class="dropdown">
+      <a href="#">My Work ▾</a>
+      <ul class="dropdown-menu">
+        <li><a href="automation.html">Automation Testing</a></li>
+        <li><a href="manual-testing.html">Manual Testing</a></li>
+        <li><a href="projects.html">Project Case Studies</a></li>
+        <li><a href="resume.pdf" target="_blank">Resume</a></li>
+      </ul>
+    </li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+  <button class="dark-toggle" onclick="toggleDarkMode()">🌙</button>
+</nav>
+
+<div class="container">
+
+  <section>
+    <h3>Contact Information</h3>
+    <div class="card">
+      <p><strong>📧 Email:</strong> pk8789082693@gmail.com</p>
+      <p><strong>📞 Phone:</strong> 9011695024 / 8789082693</p>
+      <p><strong>📍 Location:</strong> Savitribai Phule Pune University Campus, Ganeshkhind, Pune, Maharashtra</p>
+    </div>
+  </section>
+
+  <section>
+    <h3>Quick Message</h3>
+    <div class="card">
+      <form>
+        <div style="margin-bottom:16px;">
+          <input type="text" placeholder="Your Name" required style="width:100%;padding:12px;border-radius:8px;border:none;" />
+        </div>
+        <div style="margin-bottom:16px;">
+          <input type="email" placeholder="Your Email" required style="width:100%;padding:12px;border-radius:8px;border:none;" />
+        </div>
+        <div style="margin-bottom:16px;">
+          <textarea placeholder="Your Message" rows="4" style="width:100%;padding:12px;border-radius:8px;border:none;"></textarea>
+        </div>
+        <button class="cta-btn" type="submit">Send Message</button>
+      </form>
+      <p style="margin-top:12px;font-size:0.9rem;opacity:0.8;">(Form is UI-only for now)</p>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2026 Piyush Kumar · Contact</p>
+  </footer>
+
+</div>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>

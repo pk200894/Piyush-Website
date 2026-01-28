@@ -3,323 +3,85 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Piyush Kumar | Software Test Engineer | Automation Tester</title>
-  <meta name="description" content="Piyush Kumar – Software Test Engineer with ~2 years of experience in Automation Testing, Selenium WebDriver (Java), Manual Testing, Agile, and QA practices." />
-  <meta name="keywords" content="Software Test Engineer, Automation Tester, Selenium WebDriver, Java, Manual Testing, QA Engineer, SDET, Pune" />
-  <meta name="author" content="Piyush Kumar" />
-  <meta property="og:title" content="Piyush Kumar | Automation Tester" />
-  <meta property="og:description" content="Professional portfolio of Piyush Kumar – Automation Tester with Selenium WebDriver (Java) and QA experience." />
-  <meta property="og:type" content="website" />
+  <title>Software Test Engineer | Piyush Kumar</title>
+  <meta name="description" content="Piyush Kumar – Software Test Engineer with experience in Manual and Automation Testing using Selenium WebDriver (Java)." />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
-  <style>
-    :root {
-      --bg: linear-gradient(135deg, #eef2ff, #f8fafc);
-      --card-bg: linear-gradient(135deg, #ffffff, #f8fafc);
-      --text: #222;
-      --heading: #1e293b;
-      --accent: #6366f1;
-      --shadow: rgba(0,0,0,0.08);
-    }
-
-    body.dark {
-      --bg: linear-gradient(135deg, #0f172a, #020617);
-      --card-bg: #020617;
-      --text: #e5e7eb;
-      --heading: #f8fafc;
-      --accent: #38bdf8;
-      --shadow: rgba(0,0,0,0.6);
-    }
-
-    * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Inter', sans-serif; }
-    body { background: var(--bg); color: var(--text); line-height: 1.6; transition: all 0.4s ease; }
-    .container { max-width: 1100px; margin: auto; padding: 40px 20px; }
-
-    header {
-      background: var(--card-bg);
-      padding: 30px;
-      border-radius: 18px;
-      box-shadow: 0 20px 40px var(--shadow);
-      display: flex;
-      flex-wrap: wrap;
-      align-items: center;
-      gap: 30px;
-      position: relative;
-    }
-
-    header img {
-      width: 220px;
-      height: 220px;
-      object-fit: cover;
-      border-radius: 50%;
-      box-shadow: 0 10px 25px var(--shadow);
-    }
-
-    .intro h1 {
-      font-size: 2.6rem;
-      background: linear-gradient(90deg, #2563eb, #9333ea);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-    }
-
-    .intro h2 { font-size: 1.2rem; font-weight: 500; color: var(--heading); margin: 8px 0; }
-    .intro p { margin-top: 12px; max-width: 600px; }
-
-    section { margin-top: 60px; }
-    h3 {
-      font-size: 1.6rem;
-      margin-bottom: 20px;
-      border-left: 6px solid var(--accent);
-      padding-left: 12px;
-      color: var(--heading);
-    }
-
-    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; }
-
-    .card {
-      background: var(--card-bg);
-      padding: 24px;
-      border-radius: 18px;
-      border-top: 4px solid var(--accent);
-      box-shadow: 0 10px 30px var(--shadow);
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
-    }
-
-    .card:hover {
-      transform: translateY(-6px) scale(1.02);
-      box-shadow: 0 25px 50px var(--shadow);
-    }
-
-    @media (max-width: 768px) {
-      header {
-        flex-direction: column;
-        text-align: center;
-      }
-      header img {
-        width: 180px;
-        height: 180px;
-      }
-    }
-
-    ul { padding-left: 18px; }
-
-    footer {
-      text-align: center;
-      margin-top: 80px;
-      padding: 35px 20px;
-      border-radius: 18px;
-      background: var(--card-bg);
-      box-shadow: 0 10px 30px var(--shadow);
-      color: var(--text);
-    }
-
-    a { color: var(--accent); text-decoration: none; font-weight: 600; }
-
-    .resume-btn {
-      display: inline-block;
-      padding: 12px 22px;
-      border-radius: 30px;
-      background: linear-gradient(90deg, #2563eb, #9333ea);
-      color: #ffffff;
-      font-weight: 600;
-      box-shadow: 0 10px 25px rgba(37,99,235,0.35);
-    }
-
-    .dark-toggle {
-      position: absolute;
-      top: 20px;
-      right: 20px;
-      padding: 8px 14px;
-      border-radius: 20px;
-      cursor: pointer;
-      background: var(--accent);
-      color: #fff;
-      font-size: 0.85rem;
-      border: none;
-    }
-  </style>
+  <link rel="stylesheet" href="assets/css/style.css">
 </head>
+
 <body class="dark">
 
-  <div class="container">
+<!-- NAVBAR -->
+<nav class="navbar">
+  <div class="nav-brand">Piyush Kumar</div>
 
-    <!-- HEADER -->
-    <header>
-      <button class="dark-toggle" onclick="toggleDarkMode()">🌙</button>
-      <img src="profile.jpg" alt="Profile Photo" />
-
-
-      <div class="intro">
-        <h1>Piyush Kumar</h1>
-        <h2>Software Test Engineer | Manual & Automation Testing | Selenium WebDriver (Java)</h2>
-        <p>
-          Detail-oriented Automation Tester with hands-on experience in Selenium WebDriver using Java.
-          Passionate about quality assurance, automation frameworks, and delivering reliable software
-          in Agile environments.
-        </p>
-        <p>
-          <a href="https://www.linkedin.com/in/piyush-kumar20" target="_blank">LinkedIn</a> ·
-          <a href="https://github.com/your-github-username" target="_blank">GitHub</a> ·
-          <a href="mailto:pk200894@gmail.com">Email</a>
-        </p>
-        <p style="margin-top:16px;">
-          <a href="./resume.pdf" class="resume-btn" target="_blank" download="Piyush_Kumar_Resume.pdf">Download Resume</a>
-        </p>
-      </div>
-    </header>
-
-    <!-- SKILLS -->
-    <section>
-      <h3>Technical Skills</h3>
-      <div class="grid">
-        <div class="card">Selenium WebDriver (Java)</div>
-        <div class="card">Manual & Automation Testing</div>
-        <div class="card">TestNG · Maven · Cucumber (Basic)</div>
-        <div class="card">JIRA · Bugzilla</div>
-        <div class="card">Functional & Regression Testing</div>
-        <div class="card">Agile / Scrum</div>
-      </div>
-    </section>
-
-    <!-- EXPERIENCE -->
-    <section>
-      <h3>Experience</h3>
-      <div class="card">
-        <h4>Software Test Engineer – SPPU Edutech Foundation</h4>
-        <p><em>March 2024 – Present</em></p>
-        <ul>
-          <li>Worked on end-to-end testing activities including requirement analysis, test case design, execution, and defect tracking</li>
-          <li>Performed functional, regression, integration, and sanity testing for web and mobile applications</li>
-          <li>Actively collaborated with developers and product teams in Agile sprint cycles</li>
-          <li>Supported UAT cycles and performed production sanity testing before releases</li>
-        </ul>
-      </div>
-    </section>
-
-    <!-- AUTOMATION EXPERIENCE -->
-    <section>
-      <h3>Automation Experience</h3>
-      <div class="card">
-        <ul>
-          <li>Developed and executed automated test scripts using <strong>Selenium WebDriver with Java</strong> for critical application workflows</li>
-          <li>Automated regression test cases to reduce manual testing effort during sprint releases</li>
-          <li>Used <strong>TestNG</strong> for test execution, grouping, and reporting</li>
-          <li>Managed project dependencies and builds using <strong>Maven</strong></li>
-          <li>Maintained and enhanced automation scripts based on application changes</li>
-          <li>Analyzed automation failures, logged defects in <strong>JIRA/Bugzilla</strong>, and revalidated fixes</li>
-          <li>Worked with reusable methods and basic framework concepts to improve script maintainability</li>
-        </ul>
-      </div>
-    </section>
-
-    <!-- TESTING EXPOSURE -->
-    <section>
-      <h3>API Testing Exposure</h3>
-      <div class="grid">
-        <div class="card">Basic API Testing using Postman</div>
-        <div class="card">Validating Request & Response Payloads</div>
-        <div class="card">Status Code & Response Time Validation</div>
-        <div class="card">REST API Concepts (GET, POST, PUT, DELETE)</div>
-      </div>
-    </section>
-
-    <!-- TESTING EXPOSURE -->
-    <section>
-      <h3>Testing Exposure</h3>
-      <div class="grid">
-        <div class="card">Functional Testing</div>
-        <div class="card">Regression Testing</div>
-        <div class="card">Smoke & Sanity Testing</div>
-        <div class="card">Integration Testing</div>
-        <div class="card">User Acceptance Testing (UAT)</div>
-        <div class="card">Web & Mobile Application Testing</div>
-        <div class="card">Cross-Browser Testing</div>
-        <div class="card">Production Sanity Testing</div>
-      </div>
-    </section>
-
-    <!-- CERTIFICATION -->
-    <section>
-      <h3>Certification</h3>
-      <div class="card">
-        <strong>SDET – Plus Certification</strong><br />
-        SEED Infotech (2023 – 2024)<br />
-        Grade A
-      </div>
-    </section>
-
-    <!-- PROJECTS -->
-    <section>
-      <h3>Projects</h3>
-      <div class="grid">
-        <div class="card">
-          <h4>MSFDA Portal</h4>
-          <p><em>Government Web Application</em></p>
-          <ul>
-            <li>Tested a government portal designed for faculty development and training management</li>
-            <li>Performed functional, regression, and integration testing across multiple modules</li>
-            <li>Validated form submissions, user roles, and data integrity</li>
-            <li>Logged and tracked defects using JIRA/Bugzilla and verified fixes</li>
-          </ul>
-        </div>
-
-        <div class="card">
-          <h4>Recruitment & Internship Portal (SPPU)</h4>
-          <p><em>Web-Based Recruitment System</em></p>
-          <ul>
-            <li>Worked on end-to-end testing of recruitment and internship workflows</li>
-            <li>Tested candidate registration, application submission, and admin approval flows</li>
-            <li>Performed regression testing during feature enhancements</li>
-            <li>Automated critical regression scenarios using Selenium WebDriver (Java)</li>
-          </ul>
-        </div>
-
-        <div class="card">
-          <h4>Fee Collection & Remuneration System</h4>
-          <p><em>Financial Management Application</em></p>
-          <ul>
-            <li>Tested fee collection, payment processing, and remuneration calculation modules</li>
-            <li>Validated data accuracy, transaction flows, and report generation</li>
-            <li>Performed integration testing with dependent modules</li>
-            <li>Ensured defect-free releases through regression and sanity testing</li>
-          </ul>
-        </div>
-
-        <div class="card">
-          <h4>Complaint Management System</h4>
-          <p><em>Web Application</em></p>
-          <ul>
-            <li>Tested complaint registration, tracking, and resolution workflows</li>
-            <li>Validated role-based access for users and administrators</li>
-            <li>Performed functional and regression testing during sprint cycles</li>
-            <li>Collaborated with developers to verify bug fixes and improvements</li>
-          </ul>
-        </div>
-      </div>
-    </section>
-
-    <!-- FOOTER -->
-    <footer>
-      <p>© 2026 Piyush Kumar · Automation Tester</p>
-    </footer>
-
+  <div class="hamburger" onclick="toggleMenu()">
+    <span></span><span></span><span></span>
   </div>
 
-<script>
-  function toggleDarkMode() {
-    document.body.classList.toggle('dark');
-    localStorage.setItem('theme', document.body.classList.contains('dark') ? 'dark' : 'light');
-  }
+  <ul class="nav-links" id="navLinks">
+    <li><a href="index.html" class="active">Overview</a></li>
+    <li class="dropdown">
+      <a href="#">My Work ▾</a>
+      <ul class="dropdown-menu">
+        <li><a href="automation.html">Automation Testing</a></li>
+        <li><a href="manual-testing.html">Manual Testing</a></li>
+        <li><a href="projects.html">Project Case Studies</a></li>
+        <li><a href="resume.pdf" target="_blank">Resume</a></li>
+<li><a href="contact.html">Contact</a></li>
 
-  // Set default theme to dark
-  if (!localStorage.getItem('theme')) {
-    localStorage.setItem('theme', 'dark');
-  }
+      </ul>
+    </li>
+  </ul>
 
-  if (localStorage.getItem('theme') === 'dark') {
-    document.body.classList.add('dark');
-  } else {
-    document.body.classList.remove('dark');
-  }
-</script>
-</body>
-</html>
+  <button class="dark-toggle" onclick="toggleDarkMode()">🌙</button>
+</nav>
+
+<div class="container">
+
+  <!-- HERO SECTION -->
+  <header>
+    <img src="profile.jpg" alt="Piyush Kumar">
+    <div class="intro">
+      <h1>Piyush Kumar</h1>
+      <h2>Software Test Engineer | Manual & Automation Testing</h2>
+      <p>
+        Software Test Engineer with nearly 2 years of experience in manual testing
+        and Selenium-based automation. Experienced in functional testing, regression
+        testing, defect management, and supporting high-quality software releases.
+      </p>
+    </div>
+  </header>
+
+  <!-- CORE SKILLS -->
+  <section>
+    <h3>Core Skills</h3>
+    <div class="grid">
+      <div class="card">Manual Testing</div>
+      <div class="card">Automation Testing (Selenium + Java)</div>
+      <div class="card">Test Case Design & Execution</div>
+      <div class="card">Regression & Smoke Testing</div>
+      <div class="card">Defect Tracking (JIRA / Bugzilla)</div>
+      <div class="card">UAT Support</div>
+    </div>
+  </section>
+
+  <!-- PROFESSIONAL SUMMARY -->
+  <section>
+    <h3>Professional Summary</h3>
+    <div class="card">
+      <p>
+        I have worked on real-world web applications, including government and
+        enterprise portals. My responsibilities include understanding requirements,
+        designing and executing test cases, logging and verifying defects, and
+        supporting automation efforts to improve overall test efficiency.
+      </p>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section>
+    <h3>Explore My Work</h3>
+    <div class="cta-buttons">
+      <a class="cta-btn" href="automation.html">🤖 Automation Testing</a>
+      <a class="cta-btn" href="manual-testing.html">🧪 Manual Testing
